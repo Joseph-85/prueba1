@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Tu Comentario</title>
+    <link rel="stylesheet" href="/stylesheets/col.css" >
+    <link rel="stylesheet" href="/BD/bd.js"/>
+    
 </head>
-<body>
-     <h1>deja tu opcion</h1>
-    <a href="index.hbs">quiere regresar</a>
+<body> 
+     
+     <form action="/" method="post">
+        <h3>Registrate</h3>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" placeholder="Escribe Tu Nombre" name="Nombre">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Escribe Tu Correo" name="email">
+        
+        <label for="Venezuela">donde eres:</label>
+        <select>   
+            <option value="Venezuela">Venezuela</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Perú">Perú</option>
+            <option value="Chile">Chile</option>
+            <option value="Ecuardor">Ecuardor</option>
+            <option value="Otro País">Otro País</option>
+        </select>
+
+        <label for="Mensaje">Mensaje:</label>
+        <textarea name= "Comentario" id="Mensaje" placeholder="Escribe Tu Mensaje"></textarea>
+
+        <input type="submit" value="Listo">
+
+
+
+
+     </form>
+
+     <hr/>
+     <h2> Quiere regresar a las pagina principal has clis <a href="/">aquí</a> </h2>
 </body>
 </html>
